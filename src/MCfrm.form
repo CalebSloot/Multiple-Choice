@@ -90,31 +90,26 @@
                                                       <Component id="Ans5lbl" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                      <Component id="Ans4lbl" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
                                                       <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                                       <Component id="Ans3lbl" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="102" alignment="0" attributes="0">
-                                                      <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="jLabel32" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                      <Component id="Ans4lbl" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="Ans2lbl" min="-2" max="-2" attributes="0"/>
                                                   </Group>
-                                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <Component id="jLabel32" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                          <Component id="Ans2lbl" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace max="32767" attributes="0"/>
-                                                          <Component id="AnsI" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                          <Component id="Ans1lbl" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
-                                                          <Component id="AnsC" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                      <Component id="Ans1lbl" min="-2" max="-2" attributes="0"/>
                                                   </Group>
+                                                  <Component id="AnsI" alignment="0" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                           </Group>
@@ -193,6 +188,8 @@
                                       </Group>
                                   </Group>
                               </Group>
+                              <Component id="AnsC" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="perclbl" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -304,20 +301,11 @@
                               <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="ans3txt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="AnsC" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="AnsI" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                          <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="ans3txt" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       </Group>
@@ -348,7 +336,14 @@
                       <Component id="jLabel34" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="Ans5lbl" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="AnsC" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="AnsI" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="perclbl" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="79" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -594,14 +589,10 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="AnsC">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="jLabel36"/>
-          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="AnsI">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="jLabel36"/>
-          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="perclbl">
         </Component>
       </SubComponents>
     </Container>

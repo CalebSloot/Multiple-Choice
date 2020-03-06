@@ -75,6 +75,7 @@ public class MCfrm extends javax.swing.JFrame {
         jLabel35 = new javax.swing.JLabel();
         AnsC = new javax.swing.JLabel();
         AnsI = new javax.swing.JLabel();
+        perclbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -168,10 +169,6 @@ public class MCfrm extends javax.swing.JFrame {
 
         jLabel35.setText("By Caleb Sloot");
 
-        AnsC.setText("jLabel36");
-
-        AnsI.setText("jLabel36");
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -215,26 +212,22 @@ public class MCfrm extends javax.swing.JFrame {
                                                     .addGap(18, 18, 18)
                                                     .addComponent(Ans5lbl))
                                                 .addGroup(jPanel1Layout.createSequentialGroup()
+                                                    .addComponent(jLabel33)
+                                                    .addGap(18, 18, 18)
+                                                    .addComponent(Ans4lbl))
+                                                .addGroup(jPanel1Layout.createSequentialGroup()
                                                     .addComponent(jLabel31)
                                                     .addGap(18, 18, 18)
                                                     .addComponent(Ans3lbl))
                                                 .addGroup(jPanel1Layout.createSequentialGroup()
-                                                    .addComponent(jLabel33)
+                                                    .addComponent(jLabel32)
                                                     .addGap(18, 18, 18)
-                                                    .addComponent(Ans4lbl))
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                                        .addComponent(jLabel32)
-                                                        .addGap(18, 18, 18)
-                                                        .addComponent(Ans2lbl)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                        .addComponent(AnsI))
-                                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                                        .addComponent(jLabel30)
-                                                        .addGap(18, 18, 18)
-                                                        .addComponent(Ans1lbl)
-                                                        .addGap(96, 96, 96)
-                                                        .addComponent(AnsC))))
+                                                    .addComponent(Ans2lbl))
+                                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                                    .addComponent(jLabel30)
+                                                    .addGap(18, 18, 18)
+                                                    .addComponent(Ans1lbl))
+                                                .addComponent(AnsI))
                                             .addGap(0, 0, Short.MAX_VALUE))
                                         .addGroup(jPanel1Layout.createSequentialGroup()
                                             .addGap(0, 0, Short.MAX_VALUE)
@@ -289,7 +282,9 @@ public class MCfrm extends javax.swing.JFrame {
                                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(jLabel28)
-                                            .addGap(84, 84, 84))))))))
+                                            .addGap(84, 84, 84)))))
+                            .addComponent(AnsC)
+                            .addComponent(perclbl))))
                 .addContainerGap(52, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -373,17 +368,11 @@ public class MCfrm extends javax.swing.JFrame {
                             .addComponent(jLabel29)
                             .addComponent(jButton1))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel16)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel17)
-                                    .addComponent(ans3txt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(AnsC)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(AnsI)))
+                        .addComponent(jLabel16)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel17)
+                            .addComponent(ans3txt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(12, 12, 12))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -405,7 +394,13 @@ public class MCfrm extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel34)
                     .addComponent(Ans5lbl))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(AnsC)
+                    .addComponent(AnsI))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(perclbl)
+                .addContainerGap(79, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -423,51 +418,56 @@ public class MCfrm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        double ans1, ans2, ans3, ans4, ans5, totalCorrect = 0, totalIncorrect = 0, percCorrect = 0, userAnswer, answer;
+        double ans1, ans2, ans3, ans4, ans5, totalCorrect = 5, totalIncorrect = 0, percCorrect;
         ans1 = Double.parseDouble(ans1txt.getText());
         Ans1lbl.setText("Correct!");
         if (ans1 != 25)
         { 
             Ans1lbl.setText("Incorrect. The answer is 25.");
+            totalCorrect = totalCorrect - 1;
+            totalIncorrect = totalIncorrect +1;
         }
+        
         ans2 = Double.parseDouble(ans2txt.getText());
         Ans2lbl.setText("Correct!");
         if (ans2 != 2)
         { 
             Ans2lbl.setText("Incorrect. The answer is 2.");
+            totalCorrect = totalCorrect - 1;
+            totalIncorrect = totalIncorrect +1;
         }
+        
         ans3 = Double.parseDouble(ans3txt.getText());
         Ans3lbl.setText("Correct!");
         if (ans3 != 40)
         { 
             Ans3lbl.setText("Incorrect. The answer is 40.");
+            totalCorrect = totalCorrect - 1;
+            totalIncorrect = totalIncorrect +1;
         }
+        
         ans4 = Double.parseDouble(ans4txt.getText());
         Ans4lbl.setText("Correct!");
         if (ans4 != 30)
         { 
             Ans4lbl.setText("Incorrect. The answer is 30.");
+            totalCorrect = totalCorrect - 1;
+            totalIncorrect = totalIncorrect +1;
         }
+        
         ans5 = Double.parseDouble(ans5txt.getText());
         Ans5lbl.setText("Correct!");
         if (ans5 != 17)
         { 
             Ans5lbl.setText("Incorrect. The answer is 17.");
-        }
-        
-        
-        
-        
-        if (answer = userAnswer)
-        {
-            totalCorrect = totalCorrect +1;
-        }
-        else
-        {
+            totalCorrect = totalCorrect - 1;
             totalIncorrect = totalIncorrect +1;
         }
-        AnsC.setText(String.valueOf(totalCorrect));
-        AnsI.setText(String.valueOf(totalIncorrect));
+                                    
+        AnsC.setText("You got " + totalCorrect + "answers out of 5 correct");
+        AnsI.setText("You got " + totalIncorrect + "answers out of 5 incorrect");
+        percCorrect = ((double)totalCorrect / (double)5)*100;
+        perclbl.setText("You got " + percCorrect +"% on this quiz");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -555,5 +555,6 @@ public class MCfrm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel perclbl;
     // End of variables declaration//GEN-END:variables
 }
